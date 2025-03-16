@@ -19,7 +19,16 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
     var user = widget.user;
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            'Detail',
+            style: GoogleFonts.montserrat(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+        ),
         body: Padding(
           padding: EdgeInsets.all(15),
           child: Card(
@@ -53,6 +62,7 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
 
   Row _buildTextRow(String label, String value) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
           flex: 2,

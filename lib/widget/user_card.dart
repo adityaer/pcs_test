@@ -29,9 +29,9 @@ class UserCard extends StatelessWidget {
           ],
           color: Colors.white,
         ),
-        child:             Row(
+        child: Row(
           children: [
-            ImageBoxWithShadow(imageUrl: user.avatar, height: 100, width: 100,),
+            ImageBoxWithShadow(imageUrl: user.avatar, height: 100, width: 100),
             SizedBox(width: 10),
             Expanded(
               child: Column(
@@ -49,7 +49,7 @@ class UserCard extends StatelessWidget {
                       StringConstants.dateFormatServer,
                       StringConstants.dateFormatDDMMMMYYYYWithSpace,
                     ),
-                    style: GoogleFonts.montserrat(),
+                    style: GoogleFonts.montserrat(fontStyle: FontStyle.italic),
                   ),
                 ],
               ),

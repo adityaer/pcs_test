@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:pcs_test/widget/progress_dot.dart';
 
 class ImageBoxWithShadow extends StatelessWidget {
   const ImageBoxWithShadow({
@@ -45,7 +46,7 @@ class ImageBoxWithShadow extends StatelessWidget {
               width: 50,
               height: 50,
               child: Center(
-                child: CircularProgressIndicator(),
+                child: WidgetDotFade(color: Colors.blue,),
               ),
             ),
           ),
