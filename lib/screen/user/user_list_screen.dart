@@ -42,6 +42,7 @@ class _UserListScreenState extends State<UserListScreen> {
                         ? Center(child: WidgetDotBounce(color: Colors.blue))
                         : data.state == RequestState.loaded
                         ? ListView.builder(
+                          itemCount: data.userList.length,
                           itemBuilder: (context, index) {
                             var user = data.userList[index];
                             return Padding(
